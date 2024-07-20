@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Tailwind Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="output.css" rel="stylesheet" />
+
+
+  </head>
+  <body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Navbar Start-->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-lg bg-white/50 shadow-md">
+        <div class="flex justify-between px-5 sm:px-8 py-2 md:py-4 md:px-20 items-center">
+          <!--logo-->
+          <img src="./assets/logo.png" alt="Logo" />
+          <!--menu -->
+          <div class="hidden md:block">
+            <ul class="flex gap-x-4 text-lg text-blue-900 roboto-medium">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#blog">Blog</a></li>
+            </ul>
+          </div>
+          <!--Menu-button-->
+          <div class="md:hidden text-blue-800">
+            <button id="menu-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" id="menu-icon">
+                <path fill="rgb(30 64 175)"
+                  d="M18.9 17.009c0 .551-.518.991-1.097.991h-3.15a.98.98 0 0 1-1.003-.991v-3A.994.994 0 0 1 14.653 13h3.15c.58 0 1.097.458 1.097 1.009v3zM17.803 11h-3.15c-1.74 0-3.103 1.352-3.103 3.009v3c0 1.657 1.363 2.991 3.103 2.991h3.15C19.543 20 21 18.666 21 17.009v-3C21 12.352 19.543 11 17.803 11zM7.35 17.009c0 .551-.518.991-1.097.991h-3.15a.98.98 0 0 1-1.003-.991v-3A.994.994 0 0 1 3.103 13h3.15c.58 0 1.097.458 1.097 1.009v3zM6.253 11h-3.15C1.363 11 0 12.352 0 14.009v3C0 18.666 1.363 20 3.103 20h3.15c1.74 0 3.197-1.334 3.197-2.991v-3C9.45 12.352 7.993 11 6.253 11zM18.9 6.009c0 .551-.518.991-1.097.991h-3.15a.98.98 0 0 1-1.003-.991v-3A.994.994 0 0 1 14.653 2h3.15c.58 0 1.097.458 1.097 1.009v3zM17.803 0h-3.15c-1.74 0-3.103 1.352-3.103 3.009v3C11.55 7.666 12.913 9 14.653 9h3.15C19.543 9 21 7.666 21 6.009v-3C21 1.352 19.543 0 17.803 0zM7.35 6.009c0 .551-.518.991-1.097.991h-3.15A.98.98 0 0 1 2.1 6.009v-3A.994.994 0 0 1 3.103 2h3.15c.58 0 1.097.458 1.097 1.009v3zM6.253 0h-3.15C1.363 0 0 1.352 0 3.009v3C0 7.666 1.363 9 3.103 9h3.15C7.993 9 9.45 7.666 9.45 6.009v-3C9.45 1.352 7.993 0 6.253 0z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+          <ul class="flex flex-col gap-y-2 p-4 text-lg text-blue-900 roboto-medium">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#blog">Blog</a></li>
+          </ul>
+        </div>
+      </nav>
+    <!--Navbar Ends-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Hero starts -->
+    <section class="relative pb-[100vh]">
+      <img
+        src="./assets/home-banner.jpg"
+        alt="A banner showcasing online education services"
+        class="w-full h-screen object-center object-cover absolute"
+      />
+      <div
+        class="absolute text-[#002347] flex flex-col items-center justify-center w-full h-[80vh] gap-y-5"
+      >
+        <p class="text-xl roboto-medium text-center px-5">
+          BEST ONLINE EDUCATION SERVICE IN THE WORLD
+        </p>
+        <p class="text-4xl roboto-bold text-center">
+          ONE STEP AHEAD THIS SEASON
+        </p>
+        <div class="flex flex-col md:flex-row gap-y-4 gap-x-5">
+          <button
+            class="bg-[#002347] text-lg py-3 px-6 rounded-sm text-yellow-500 roboto-medium"
+          >
+            Learn More
+          </button>
+          <button
+            class="bg-yellow-500 text-[#002347] text-lg py-3 px-6 rounded-sm roboto-medium"
+          >
+            See Courses
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Hero 2 starts-->
+    <section class="relative">
+      <div class="flex flex-col items-center justify-center w-full h-32 my-5">
+        <p class="roboto-bold text-3xl text-[#002347]">Awesome Feature</p>
+        <p
+          class="text-lg roboto-light text-center roboto-light-italic text-gray-700"
+        >
+          Replenish man have thing gathering lights yielding shall you
+        </p>
+      </div>
+    </section>
+
+    <section class="flex justify-center w-full gap-5">
+      <div class="flex flex-col md:flex-row gap-5 justify-center">
+        <div
+          class="flex flex-col gap-2 bg-slate-100 min-h-36 md:w-1/2 max-w-72 px-7 py-5"
+        >
+          <img
+            width="64"
+            height="64"
+            src="https://img.icons8.com/glyph-neue/64/graduation-cap.png"
+            alt="graduation-cap"
+          />
+          <p class="roboto-bold text-xl text-[#002347]">Scholarship Facility</p>
+          <p class="text-sm roboto-light text-gray-700">
+            One make creepeth, man bearing theira firmament won't great heaven
+          </p>
+        </div>
+
+        <div
+          class="flex flex-col gap-2 bg-slate-100 min-h-36 md:w-1/2 max-w-72 px-7 py-5"
+        >
+          <img
+            width="64"
+            height="64"
+            src="https://img.icons8.com/glyph-neue/64/literature.png"
+            alt="literature"
+          />
+          <p class="roboto-bold text-xl text-[#002347]">Sell Courses Online</p>
+          <p class="text-sm roboto-light text-gray-700">
+            One make creepeth, man bearing theira firmament won't great heaven
+          </p>
+        </div>
+
+        <div
+          class="flex flex-col gap-2 bg-slate-100 min-h-36 md:w-1/2 max-w-72 px-7 py-5"
+        >
+          <img
+            width="64"
+            height="64"
+            src="https://img.icons8.com/glyph-neue/64/america.png"
+            alt="america"
+          />
+          <p class="roboto-bold text-xl text-[#002347]">Global Certificate</p>
+          <p class="text-sm roboto-light text-gray-700">
+            One make creepeth, man bearing theira firmament won't great heaven
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--Hero 2 Ends-->
+
+
+
+
+
+
+
+
+
+
+
+    <!--popular course-->
+    <section>
+      <div class="flex flex-col items-center justify-center w-full h-32 my-5">
+        <p class="roboto-bold text-3xl text-[#002347]">Popular Course</p>
+        <p
+          class="text-lg roboto-light text-center roboto-light-italic text-gray-700"
+        >
+          Replenish man have thing gathering lights yielding shall you
+        </p>
+      </div>
+
+      <div class="flex flex-wrap justify-center w-full gap-x-5 gap-y-5">
+        <div
+          class="flex flex-col md:flex-row items-center justify-center gap-5 max-w-80 bg-slate-50"
+        >
+          <div class="">
+            <div>
+              <img src="./assets/c1.jpg" alt="" />
+            </div>
+            <div class="p-5 space-y-4">
+              <span class="bg-blue-950 text-white roboto-medium px-3 py-1"
+                >DESIGN</span
+              >
+              <h1 class="roboto-bold text-xl text-[#002347]">
+                Custom Product Design
+              </h1>
+              <p class="roboto-light text-gray-700 text-wrap">
+                One make creepeth, man bearing theira firmament won't great
+                heaven
+              </p>
+            </div>
+            <div class="flex justify-between px-5">
+              <div class="flex items-center gap-x-2 pb-2 ">
+                <img src="./assets/author1.png" alt="" />
+                <p class="text-lg text-[#002347] roboto-medium">Cameron</p>
+              </div>
+
+              <div class="flex items-center gap-x-2">
+                <div class="flex gap-2 items-center">
+                  <img
+                    width="20"
+                    height="20"
+                    src="https://img.icons8.com/ios/50/user--v1.png"
+                    alt="user--v1"
+                  /><span>25</span>
+                </div>
+                <div class="flex gap-2 items-center">
+                  <img
+                    width="20"
+                    height="20"
+                    src="https://img.icons8.com/ios/50/like--v1.png"
+                    alt="like--v1"
+                  /><span>35</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col md:flex-row items-center justify-center gap-5 max-w-80 bg-slate-50"
+        >
+          <div class="">
+            <div>
+              <img src="./assets/c2.jpg" alt="" />
+            </div>
+            <div class="p-5 space-y-4">
+              <span class="bg-blue-950 text-white roboto-medium px-3 py-1"
+                >DESIGN</span
+              >
+              <h1 class="roboto-bold text-xl text-[#002347]">
+                Custom Product Design
+              </h1>
+              <p class="roboto-light text-gray-700 text-wrap">
+                One make creepeth, man bearing theira firmament won't great
+                heaven
+              </p>
+            </div>
+            <div class="flex justify-between px-5">
+              <div class="flex items-center gap-x-2">
+                <img src="./assets/author2.png" alt="" />
+                <p class="text-lg text-[#002347] roboto-medium">Nikole</p>
+              </div>
+
+              <div class="flex items-center gap-x-2">
+                <div class="flex gap-2 items-center">
+                  <img
+                    width="20"
+                    height="20"
+                    src="https://img.icons8.com/ios/50/user--v1.png"
+                    alt="user--v1"
+                  /><span>25</span>
+                </div>
+                <div class="flex gap-2 items-center">
+                  <img
+                    width="20"
+                    height="20"
+                    src="https://img.icons8.com/ios/50/like--v1.png"
+                    alt="like--v1"
+                  /><span>35</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col md:flex-row items-center justify-center gap-5 max-w-80 bg-slate-50"
+        >
+          <div class="">
+            <div>
+              <img src="./assets/c3.jpg" alt="" />
+            </div>
+            <div class="p-5 space-y-4">
+              <span class="bg-blue-950 text-white roboto-medium px-3 py-1"
+                >DESIGN</span
+              >
+              <h1 class="roboto-bold text-xl text-[#002347]">
+                Custom Product Design
+              </h1>
+              <p class="roboto-light text-gray-700 text-wrap">
+                One make creepeth, man bearing theira firmament won't great
+                heaven
+              </p>
+            </div>
+            <div class="flex justify-between px-5">
+              <div class="flex items-center gap-x-2">
+                <img src="./assets/author3.png" alt="" />
+                <p class="text-lg text-[#002347] roboto-medium">Jennifer</p>
+              </div>
+
+              <div class="flex items-center gap-x-2">
+                <div class="flex gap-2 items-center">
+                  <img
+                    width="20"
+                    height="20"
+                    src="https://img.icons8.com/ios/50/user--v1.png"
+                    alt="user--v1"
+                  /><span>25</span>
+                </div>
+                <div class="flex gap-2 items-center">
+                  <img
+                    width="20"
+                    height="20"
+                    src="https://img.icons8.com/ios/50/like--v1.png"
+                    alt="like--v1"
+                  /><span>35</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- Poupular Course ends -->
+
+
+
+
+
+
+
+<!-- Register Now start-->
+    <section class="py-10">
+      <div
+        class="bg-[#002347] flex flex-col md:flex-row items-center justify-center"
+      >
+        <div class="flex flex-col items-center justify-center md:w-3/4 my-5">
+          <div class="flex flex-col px-10 py-20 gap-y-3">
+            <p class="text-3xl text-white roboto-bold">Register Now</p>
+            <p class="text-white roboto-light">
+              There is a moment in the life of any aspiring astronomer that it
+              is time to buy that first telescope. It’s exciting to think about
+              setting up your own viewing station.
+            </p>
+
+            <div class="flex flex-wrap items-center gap-5 text-white mt-3">
+              <div
+                class="bg-white/30 backdrop-blur-md w-28 h-24 flex justify-center items-center border-2"
+              >
+                <span class="roboto-bold text-3xl px-1">150</span
+                ><span>Days</span>
+              </div>
+              <div
+                class="bg-white/30 backdrop-blur-md w-28 h-24 flex justify-center items-center border-2"
+              >
+                <span class="roboto-bold text-3xl px-1">23</span
+                ><span>Hours</span>
+              </div>
+              <div
+                class="bg-white/30 backdrop-blur-md w-28 h-24 flex justify-center items-center border-2"
+              >
+                <span class="roboto-bold text-3xl px-1">47</span
+                ><span>Min</span>
+              </div>
+              <div
+                class="bg-white/30 backdrop-blur-md w-28 h-24 flex justify-center items-center border-2"
+              >
+                <span class="roboto-bold text-3xl px-1">59</span
+                ><span>Sec</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center items-center p-5 px-7">
+          <div class="bg-white text-center px-5 py-10 space-y-5">
+            <p class="text-xl text-[#002347] roboto-bold">Courses For Free</p>
+            <p class="text-lg text-gray-600 roboto-light">
+              It is high time for learning
+            </p>
+            <input
+              type="text"
+              placeholder="Your name"
+              class="w-full h-10 px-2 border-b"
+            />
+            <input
+              type="text"
+              placeholder="Your email"
+              class="w-full h-10 px-2 border-b"
+            />
+            <input
+              type="number"
+              placeholder="Your number"
+              class="w-full h-10 px-2 border-b"
+            />
+            <button
+              class="text-[#002347] text-lg py-2 w-full rounded-sm bg-yellow-500 roboto-medium"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+<!-- Register Now ends-->
+
+
+
+
+<!-- Our Expert Trainers-->
+    <section>
+      <div class="flex flex-col items-center justify-center w-full h-32 my-5">
+        <p class="roboto-bold text-3xl text-[#002347]">Our Expert Trainers</p>
+        <p
+          class="text-lg roboto-light text-center roboto-light-italic text-gray-700"
+        >
+          Replenish man have thing gathering lights yielding shall you
+        </p>
+      </div>
+      <div class="flex flex-wrap items-center justify-center gap-5">
+        <div class="max-w-52 shadow-md text-center">
+          <img src="./assets/t1.jpg" alt="" />
+          <p class="text-lg text-[#002347] roboto-medium mt-1">Mated Nithan</p>
+          <p class="text-sm text-gray-600 roboto-light">Sr. web designer</p>
+          <p class="text-sm text-gray-800 py-3 px-3">
+            If you are looking at blank cassettes on the web, you may be very
+            confused at the.
+          </p>
+        </div>
+
+        <div class="max-w-52 shadow-md text-center">
+          <img src="./assets/t2.jpg" alt="" />
+          <p class="text-lg text-[#002347] roboto-medium mt-1">David Cameron</p>
+          <p class="text-sm text-gray-600 roboto-light">Sr. web designer</p>
+          <p class="text-sm text-gray-800 py-3 px-3">
+            If you are looking at blank cassettes on the web, you may be very
+            confused at the.
+          </p>
+        </div>
+
+        <div class="max-w-52 shadow-md text-center">
+          <img src="./assets/t3.jpg" alt="" />
+          <p class="text-lg text-[#002347] roboto-medium mt-1">Jain Redmen</p>
+          <p class="text-sm text-gray-600 roboto-light">Sr. web designer</p>
+          <p class="text-sm text-gray-800 py-3 px-3">
+            If you are looking at blank cassettes on the web, you may be very
+            confused at the.
+          </p>
+        </div>
+
+        <div class="max-w-52 shadow-md text-center">
+          <img src="./assets/t4.jpg" alt="" />
+          <p class="text-lg text-[#002347] roboto-medium mt-1">Nathan Macken</p>
+          <p class="text-sm text-gray-600 roboto-light">Sr. web designer</p>
+          <p class="text-sm text-gray-800 py-3 px-3">
+            If you are looking at blank cassettes on the web, you may be very
+            confused at the.
+          </p>
+        </div>
+      </div>
+    </section>
+
+<!-- Our Expert Trainers ends-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Client say about me-->
+
+
+    <section>
+      <div class="py-20 md:px-24">
+        <div class="flex flex-col items-center justify-center w-full h-32 my-5">
+          <p class="roboto-bold text-3xl text-[#002347]">Client say about me</p>
+          <p
+            class="text-lg roboto-light text-center roboto-light-italic text-gray-700"
+          >
+            Replenish man have thing gathering lights yielding shall you
+          </p>
+        </div>
+        <div>
+          <div class="flex flex-col md:flex-row justify-center p-5">
+            <div class="shadow-xl flex-col md:flex-row min-h-36 p-5 flex gap-5">
+              <img src="./assets/t1_1.jpg" alt="" class="" />
+              <div class="space-y-4">
+                <p class="text-lg roboto-medium text-[#002347]">Mated Nithan</p>
+                <p class="text-gray-600 text-wrap">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Expedita possimus velit doloribus ea officia.
+                </p>
+              </div>
+            </div>
+
+            <div class="shadow-xl min-h-36 flex flex-col md:flex-row p-5 gap-5">
+              <img src="./assets/t2_1.jpg" alt="" />
+              <div class="space-y-4">
+                <p class="text-lg roboto-medium text-[#002347]">Pawan Pal</p>
+                <p class="text-gray-600">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Expedita possimus velit doloribus ea officia.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- Client say about me ends-->
+
+
+
+
+<!--Footer-->
+    <footer>
+      <div
+        class="bg-[#002347] md:p-16 flex flex-col md:flex-row px-3 py-10 gap-y-7 justify-between"
+      >
+        <div>
+          <p class="text-xl text-white pb-3 roboto-medium">Top Products</p>
+          <div class="text-gray-600">
+            <p>Managed Website</p>
+            <p>Manage Reputation</p>
+            <p>Power Tools</p>
+            <p>Marketing Service</p>
+          </div>
+        </div>
+
+        <div>
+          <p class="text-xl text-white pb-3 roboto-medium">Quick looks</p>
+          <div class="text-gray-600">
+            <p>Jobs</p>
+            <p>brand assets</p>
+            <p>investor relations</p>
+            <p>terms of service</p>
+          </div>
+        </div>
+
+        <div>
+          <p class="text-xl text-white pb-3 roboto-medium">features</p>
+          <div class="text-gray-600">
+            <p>Jobs</p>
+            <p>brand assets</p>
+            <p>investor relations</p>
+            <p>terms of service</p>
+          </div>
+        </div>
+
+        <div>
+          <p class="text-xl text-white pb-3 roboto-medium">Resources</p>
+          <div class="text-gray-600">
+            <p>guides</p>
+            <p>researchers</p>
+            <p>experts</p>
+            <p>agencies</p>
+          </div>
+        </div>
+
+        <div>
+          <p class="text-xl text-white pb-3 roboto-medium">Newsletter</p>
+          <p class="text-gray-600 py-3">
+            You can trust us. we only send promo offers,
+          </p>
+          <div class="flex">
+            <input
+              type="text"
+              placeholder="Your email"
+              class="w-full h-10 bg-white/10 px-2 border-b"
+            />
+            <button
+              class="text-[#002347] text-md py-2 w-1/2 rounded-sm bg-yellow-500 roboto-medium"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+      <p class="text-center py-6">© 2024. Pawan Pal +91 7302667115</p>
+    </footer>
+
+<!--Footer
+-->
+
+
+
+
+
+
+    <script>
+        // JavaScript to handle mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+    
+        menuBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+      </script>
+
+
+
+  </body>
+</html>
